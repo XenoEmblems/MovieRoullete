@@ -1,0 +1,18 @@
+<%= form_for @movie do |f| %>
+  <div class="input-group">
+    <%= f.label :title, class: 'input-group-addon' %>
+    <%= f.text_field :title, class: 'form-control' %>
+  </div>
+  <br>
+  <div class="input-group">
+    <%= f.label :description, class: 'input-group-addon' %>
+    <%= f.text_field :description, class: 'form-control' %>
+  </div>
+  <br>
+  <div class="input-group">
+    <%= f.label :image, class: 'input-group-addon' %>
+    <%= f.text_field :image, class: 'form-control' %>
+  </div>
+  <br>
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
